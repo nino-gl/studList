@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>project</title>
+    
+</head>
+
+
+<body>
+
+
+    <header class="header">
+        <div class="header__logo">
+            
+
+            <h1 class="header__logo-title"><i class="fas fa-bars"></i><span style="padding: 10px;"> TechHub</span></h1>
+        </div>
+
+        <div class="header__buttons">
+            <button class="header__buttons-delete buttons" onclick="deleteStudents()" id="delete-btn">სტუდენტების წაშლა</button>
+
+            <button class="header__buttons-add buttons" onclick="addStudent()">სტუდენტის დამატება</button>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <aside class="aside">
+            <ul class="aside__calc">
+                <li class="aside__calc-studCount">სტუდენტების რაოდენობა <span style="float: right" id="students_n">0</span></li>
+
+                <li class="aside__calc-points">საშუალო ქულა <span style="float: right" id="av_grade">???</span></li>
+            </ul>
+        </aside>
+
+
+        <main class="main">
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Monday</td>
+                        <td>Wednesday</td>
+                        <td>Friday</td>
+                        <td>Sunday</td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+
+        </main>
+
+    </div>
+    <script src="myscripts.js"></script>
+
+</body>
+</html>
